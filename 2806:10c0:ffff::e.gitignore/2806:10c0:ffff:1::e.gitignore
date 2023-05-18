@@ -5,13 +5,18 @@ bin-release/
 [Bb]in/
 
 # Other files and folders
-.settings/
+*.10.1
+*.10.0
+*.e
+*.WAN
+*.2806
 
 # Executables
 *.swf
 *.air
 *.ipa
 *.apk
+*.Scripts Coffe 
 
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important

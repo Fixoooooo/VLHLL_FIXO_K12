@@ -1,1 +1,0 @@
-# VLHLL_FIXO_K12

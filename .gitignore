@@ -1,13 +1,21 @@
 # Build and Release Folders
+bin-debug/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us
+bin-release/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us
+[Bb]in/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us# Other files and folders
+*.fe80:7547.txt 
+*.fe80:7547.txt
 
-# Other files and folders
-.settings/
+
 
 # Executables
-.L.
+*.swf
+*.air
+*.ipa
+*.apk
+*.txt
+*.exe
 
 
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# Project files, i.e. `.project`,2806 `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Fixo ONLY GET OUT GOOGLE / Flash Builder.

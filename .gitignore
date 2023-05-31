@@ -1,13 +1,98 @@
 # Build and Release Folders
+bin-debug/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us
+bin-release/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us
+[Bb]in/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us# Other files and folders
+*.fe80:7547.txt 
+*.fe80:7547.txt
 
-# Other files and folders
-.settings/
+
 
 # Executables
-.L.
+*.swf
+*.air
+*.ipa
+*.apk
+*.txt
+*.exe
 
 
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+# ******** NOTE ********
+# We have attempted to detect the languages in your repository. Please check
+# the `language` matrix defined below to confirm you have the correct set of
+# supported CodeQL languages.
+#
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+  schedule:
+    - cron: '15 7 * * 3'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [  ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+
+        # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+        # queries: security-extended,security-and-quality
+
+
+    # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+  # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+
+    #   If the Autobuild fails above, remove it and uncomment the following three lines.
+    #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
+
+    # - run: |
+    #   echo "Run, Build Application using script"
+    #   ./location_of_script_within_repo/buildscript.sh
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        category: "/language:${{matrix.language}}"
+
+
+
+# Project files, i.e. `.project`,2806 `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
-# information for Fixo ONLY GET OUT GOOGLE / Flash Builder.
+# information for Fixo ONLY Xbox Series S get out EA GAMES AND HUB / Flash Builder.

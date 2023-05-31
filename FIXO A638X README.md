@@ -1,0 +1,4 @@
+# FIXO-V638X
+*.Series S
+*.FIXO A638X
+*.FIXO MX12#8943

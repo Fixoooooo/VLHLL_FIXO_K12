@@ -1,18 +1,164 @@
 # Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+bin-debug/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us
+bin-release/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us
+[Bb]in/https://support.microsoft.com/es-es/office/aplicaci%C3%B3n-de-microsoft-office-para-android-0383d031-a1c6-46c9-b734-53cd1d22765b?ui=es-es&rs=es-hn&ad=us# Other files and folders
+*.fe80:7547.txt 
+*.fe80:7547.txt
 
-# Other files and folders
-.settings/
+
 
 # Executables
 *.swf
 *.air
 *.ipa
 *.apk
+*.txt
+*.exe
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+
+
+
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+# ******** NOTE ********
+# We have attempted to detect the languages in your repository. Please check
+# the `language` matrix defined below to confirm you have the correct set of
+# supported CodeQL languages.
+#
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+  schedule:
+    - cron: '15 7 * * 3'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [  ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+
+        # Details on CodeQL's query packs refer to : https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+        # queries: security-extended,security-and-quality
+
+
+    # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
+    # If this step fails, then you should remove it and run the build manually (see below)
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v2
+  # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
+
+    #   If the Autobuild fails above, remove it and uncomment the following three lines.
+    #   modify them (or add more) to build your code if your project, please refer to the EXAMPLE below for guidance.
+
+    # - run: |
+    #   echo "Run, Build Application using script"
+    #   ./location_of_script_within_repo/buildscript.sh
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        category: "/language:${{matrix.language}}"
+
+
+*.pdb
+*.sig
+*.swp
+/ReleaseNotes.html
+edit-git-bash.exe
+/cached-source-packages/
+/download-stats.ids
+/git-extra/pkg/
+/git-extra/src/
+/git-extra/git-extra-*.pkg.tar.xz
+/git-extra/git-extra-*.src.tar.gz
+/git-for-windows-keyring/git-for-windows-keyring-*.pkg.tar.xz
+/git-for-windows-keyring/git-for-windows-keyring-*.src.tar.gz
+/installer/InnoSetup/Examples/
+/installer/InnoSetup/Compil32.exe
+/installer/InnoSetup/isscint.dll
+/installer/ReleaseNotes.html
+/installer/config.iss
+/installer/install.log
+/installer/is.exe
+/installer/file-list.iss
+/installer/package-versions.txt
+/installer/root/
+/mingit/exclude-list
+/mingit/root/
+/mingit/sorted-all
+/mingit/sorted-libexec-exes
+/mingw-w64-git-credential-manager/pkg/
+/mingw-w64-git-credential-manager/src/
+/mingw-w64-git-credential-manager/*.pkg.tar.*
+/mingw-w64-git-credential-manager/*.src.tar.gz
+/mingw-w64-git-credential-manager/gcm-*.zip
+/mingw-w64-git-credential-manager/v[1-9]*.zip
+/mingw-w64-wintoast/mingw-w64-*-wintoast-*-any.pkg.tar.xz
+/mingw-w64-wintoast/pkg
+/mingw-w64-wintoast/src
+/mingw-w64-wintoast/wintoast
+/msi/GitComponents.wxs
+/msi/obj/
+/msi/package-versions.txt
+/msi/wix40-binaries.zip
+/nuget/GitForWindows.nuspec
+/nuget/Git-Windows-Minimal.nuspec
+/nuget/Git-Windows-Minimal.nuspec.unmoved
+/nuget/ReleaseNotes.html
+/nuget/libexec-moved.txt
+/nuget/nuget.exe
+/nuget/package-versions.txt
+/portable/root/LICENSE.txt
+/portable/root/bin/
+/portable/root/cmd/
+/portable/root/etc/
+/portable/root/clangarm64/
+/portable/root/mingw32/
+/portable/root/mingw64/
+/portable/root/post-install.bat
+/sdk-installer/root/
+/source-zips/
+/source-zips.previous/
+/source-zips-mingit/
+/archive/root/*
+!/archive/root/etc/hosts
+!/archive/root/etc/networks
+!/archive/root/etc/protocols
+!/archive/root/etc/services
+/versions/cached-files/
+
+# Project files, i.e. `.project`,2806 `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# information for Fixo ONLY Xbox Series S get out EA GAMES AND HUB / Flash Builder.

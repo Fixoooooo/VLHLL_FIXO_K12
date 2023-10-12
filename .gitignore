@@ -1,18 +1,28 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# gitignore
+.vs/ 
+ [Bb]in/ 
+ [Dd]ebug/ 
+ [Dd]eploy/ 
+ [Oo]bj/ 
+ [Oo]utput/ 
+ [Pp]ackages/ 
+ [Rr]elease/ 
+ [Ss]ymbols/ 
+ [Tt]est[Rr]esult/ 
+  
+ *.suo 
+ *.tmp 
+ *.user 
+ *.vsp 
+ *.vspx 
+  
+ # User-specific files 
+ *.suo 
+ *.user 
+ *.sln.docstates 
+  
+ # Coverity files 
+ /cov-int/ 
+ /gcw.tar 
+ /gcw.tgz 
+ /gcw.lzma
